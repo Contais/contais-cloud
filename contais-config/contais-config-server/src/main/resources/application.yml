@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: contais-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Contais/contais-repo/
+#          search-paths: contais-config-repo
+
+server:
+  port: 18081
