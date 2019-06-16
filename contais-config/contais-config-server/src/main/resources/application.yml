@@ -1,3 +1,6 @@
+server:
+  port: 18081
+
 spring:
   application:
     name: contais-config-server
@@ -8,5 +11,9 @@ spring:
           uri: https://github.com/Contais/contais-repo/
 #          search-paths: contais-config-repo
 
-server:
-  port: 18081
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:18080/eureka

@@ -1,11 +1,19 @@
+server:
+  port: 18082
+
 spring:
   application:
     name: contais-config-client
   cloud:
     config:
-      uri: http://localhost:18081/
-      profile: sit
+#      uri: http://localhost:18081/
       label: master
+      profile: sit
+      discovery:
+        enabled: true
+        service-id: contais-config-server
 
-server:
-  port: 18082
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:18080/eureka
