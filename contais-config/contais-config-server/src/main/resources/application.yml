@@ -9,7 +9,7 @@ spring:
       server:
         git:
           uri: https://github.com/Contais/contais-repo/
-#          search-paths: contais-config-repo
+          search-paths: contais-config-repo
 
 eureka:
   instance:

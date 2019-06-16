@@ -8,7 +8,7 @@ spring:
     config:
 #      uri: http://localhost:18081/
       label: master
-      profile: sit
+      profile: dev
       discovery:
         enabled: true
         service-id: contais-config-server
@@ -17,3 +17,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:18080/eureka
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
