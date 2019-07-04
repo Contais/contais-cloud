@@ -25,6 +25,7 @@
     <modules>
         <module>contais-config</module>
         <module>contais-eureka</module>
+        <module>contais-feign</module>
     </modules>
 
     <dependencyManagement>
