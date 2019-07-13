@@ -1,0 +1,11 @@
+server:
+  port: 18084
+
+spring:
+  application:
+    name: contais-feign-consumer
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:18080/eureka/
