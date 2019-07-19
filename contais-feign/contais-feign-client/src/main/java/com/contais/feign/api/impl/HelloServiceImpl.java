@@ -1,7 +1,7 @@
 package com.contais.feign.api.impl;
 
 import com.contais.feign.api.HelloService;
-import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author Contais
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
  * @description com.contais.feign.api.impl
  * @date 2019/7/13
  */
-@Service
+@RestController
 public class HelloServiceImpl implements HelloService {
 
     @Override
