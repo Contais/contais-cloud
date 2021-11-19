@@ -1,4 +1,5 @@
 # Contais-Cloud
+![logo](https://github.com/Contais/contais-cloud/blob/master/contais-cloud.png?raw=true)
 ## 简介
 Contais-Cloud是基于SpringBoot2对SpringCloud的核心组件进行快速入门，并提供各组件间的集成案例。例如：Eureka、Config、Gateway、feign等。能够帮助所有SpringCloud初学者对SpringCloud的快速入门。
 
