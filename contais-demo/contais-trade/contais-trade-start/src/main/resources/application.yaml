@@ -1,0 +1,13 @@
+server:
+  port: 18182
+
+spring:
+  application:
+    name: contais-trade
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.3.230:8848
+      sentinel:
+        transport:
+          dashboard: http://192.168.3.230:8858

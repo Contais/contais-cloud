@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>微服务组件导航</title>
+    <style>
+        /* 基础表格样式 */
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f9fa;
+        }
+
+        a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h2 style="text-align: center; margin: 30px 0">微服务组件列表</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>组件名称</th>
+        <th>类型</th>
+        <th>访问地址</th>
+        <th>账号</th>
+        <th>密码</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Nacos 控制台</td>
+        <td><span style="color: #0d6efd">配置中心</span></td>
+        <td><a href="http://192.168.3.230:8848/nacos" target="_blank">http://192.168.3.230:8848/nacos</a></td>
+        <td>nacos</td>
+        <td>nacos</td>
+    </tr>
+    <tr>
+        <td>Sentinel 控制台</td>
+        <td><span style="color: #198754">监控组件</span></td>
+        <td><a href="http://192.168.3.230:8858" target="_blank">http://192.168.3.230:8858</a></td>
+        <td>sentinel</td>
+        <td>sentinel</td>
+    </tr>
+    <tr>
+        <td>Elasticsearch</td>
+        <td><span style="color: #6f42c1">数据存储</span></td>
+        <td><a href="http://192.168.3.230:9200" target="_blank">http://192.168.3.230:9200</a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>RabbitMQ 管理台</td>
+        <td><span style="color: #fd7e14">消息队列</span></td>
+        <td><a href="http://192.168.3.230:15672" target="_blank">http://192.168.3.230:15672</a></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
