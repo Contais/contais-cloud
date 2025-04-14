@@ -15,9 +15,15 @@ spring:
     nacos:
       discovery:
         server-addr: 192.168.3.230:8848
-      sentinel:
-        transport:
-          dashboard: http://192.168.3.230:8858
+      config:
+        server-addr: 192.168.3.230:8848
+        file-extension: yaml
+    sentinel:
+      transport:
+        dashboard: http://192.168.3.230:8858
+
+  config:
+    import: "nacos:contais-trade.yaml"
 #
 #feign:
 #  okhttp:
