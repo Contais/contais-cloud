@@ -4,6 +4,13 @@ server:
 spring:
   application:
     name: contais-trade
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.3.230:3306/ds_2?useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+#  main:
+#    allow-bean-definition-overriding: true
   cloud:
     nacos:
       discovery:
@@ -11,3 +18,9 @@ spring:
       sentinel:
         transport:
           dashboard: http://192.168.3.230:8858
+#
+#feign:
+#  okhttp:
+#    enabled: true
+#  sentinel:
+#    enabled: true

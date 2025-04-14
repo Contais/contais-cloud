@@ -22,6 +22,11 @@
                 <artifactId>contais-order-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.contais</groupId>
+                <artifactId>contais-order-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
